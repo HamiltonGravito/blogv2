@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from '../model/post.model';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,8 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  usuarioLogado: boolean = true;
+  posts: Post[] = []
   ngOnInit(): void {
   }
 
